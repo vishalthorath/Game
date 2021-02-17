@@ -34,7 +34,7 @@ public static Scanner scan = new Scanner(System.in);
 
 public static String currentTurn = "X";
 
-// public static String computerTurn = "O";
+
 
 public static String turn() {
     if (currentTurn == "X") {
@@ -87,26 +87,14 @@ public static void playerMove() {
 
 }
 
-// public static void computerMove() {
-// Random computerMove = new Random();
-// row = computerMove.nextInt(3);
-// column = computerMove.nextInt(3);
-// if (board[row][column] == "-") {
-// board[row][column] = turn();
-// } else {
 
-// }
-
-// }
 
 public static void computerMove() {
     Random computerMove = new Random();
     row = computerMove.nextInt(3);
     column = computerMove.nextInt(3);
     while (board[row][column] != "-") {
-        // Random computerMove = new Random();
-        // row = computerMove.nextInt(3);
-        // column = computerMove.nextInt(3);
+       
         if (board[row][column] == "-") {
             board[row][column] = turn();
         } else {
